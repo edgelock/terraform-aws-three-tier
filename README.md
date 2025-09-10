@@ -88,13 +88,21 @@ This process will take a few minutes as AWS provisions all the resources.
 
 ## Verify Your Deployment ✅
 
-Once the `apply` command is complete, Terraform will display the public DNS address of your Application Load Balancer in the output.
+Once the `apply` command is complete, you should see an output similar to this:
 
+```
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+load_balancer_dns = "external-application-lb-1669197604.us-east-1.elb.amazonaws.com"
+```
+
+### Testing the Load Balancer
 1. Copy the `load_balancer_dns` value from the output.  
 2. Paste it into your web browser.  
 3. You should see a **"Hello World"** message served by one of your EC2 instances.  
-
-If you refresh the page, the load balancer will distribute the traffic, and you may see the message coming from a different instance hostname.
+4. Refresh the page multiple times — the **Application Load Balancer** will alternate requests between the two EC2 instances, allowing you to observe load balancing in action.  
 
 ---
 
