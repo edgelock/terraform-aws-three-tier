@@ -1,0 +1,49 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Terraform plan file
+*.tfplan
+
+# Ignore variables file with secrets
+terraform.tfvars
+*.tfvars.json
+
+# Crash log files
+crash.log
+
+# Ignore Terraform lock file
+.terraform.lock.hcl
+
+# Local Terraform directories
+.terraform/
+.terraform/*
+
+# Ignore any sensitive generated credentials or metadata
+*.pem
+*.key
+*.crt
+*.env
+
+# Ignore backup files
+*.bak
+
+# Ignore logs
+*.log
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.iml
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore any zip or archive files
+*.zip
+*.tar.gz
+*.tar
