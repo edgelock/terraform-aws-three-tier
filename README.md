@@ -8,8 +8,7 @@ Terraform is used to manage our infrastructure as code, which makes the setup pr
 
 ## Architecture Overview
 
-![Architecture Diagram 1](https://github.com/<your-username>/terraform-aws-three-tier/blob/main/1.png)
-
+![Architecture Diagram 1](./1.png)
 
 This project will create the following resources in your AWS account:
 
