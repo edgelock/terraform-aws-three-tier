@@ -28,6 +28,8 @@ This project will create the following resources in your AWS account:
 ### Security
 - **Security Groups** that act as virtual firewalls to control traffic between the tiers (e.g., allowing the web tier to talk to the database tier but blocking public access to the database).  
 
+![Architecture Diagram 2](./2.png)
+
 ---
 
 ## Prerequisites
